@@ -1,0 +1,13 @@
+// zone loading all namecoin .bit domains
+zone "bit" {
+	type master;
+	file "/etc/bind/db.namecoin.bit";
+
+	allow-query { any; };
+	allow-transfer { none; };
+
+	forwarders { };
+
+	check-names ignore;
+};
+
